@@ -13,8 +13,8 @@ PROGRAM_SITE="http://www.riotgames.com"
 #==================================================================================================#
 
 WINE_ARCH="x86"
-WINE_VERSION="System"
 WINE_PREFIX="League_of_Legends"
+WINE_VERSION="1.9.2-staging-LOL3"
 
 #==================================================================================================#
 
@@ -45,7 +45,7 @@ LOL_DESKTOP_CATEGORY="Game;"
 	POL_Wine_SelectPrefix "$WINE_PREFIX"
 
 	# Creating WinePrefix
-	POL_Wine_PrefixCreate
+	POL_Wine_PrefixCreate "$WINE_VERSION"
 
 	# Installing Depends
 	POL_Call POL_Install_vcrun2005
