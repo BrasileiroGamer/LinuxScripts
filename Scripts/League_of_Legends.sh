@@ -13,6 +13,7 @@ PROGRAM_SITE="http://www.riotgames.com"
 #==================================================================================================#
 
 WINE_ARCH="x86"
+WINE_VMS="1024"
 WINE_PREFIX="League_of_Legends"
 WINE_VERSION="System"
 
@@ -67,11 +68,14 @@ LOL_DESKTOP_CATEGORY="Game;"
 	POL_Wine_WaitBefore "$PROGRAM_TITLE"
 	POL_Wine "$POL_System_TmpDir/$LOL_DOWNLOAD_BIN"
 
-	# Override 'dnsapi'
+	# Overrides
 	POL_Wine_OverrideDLL "builtin,native" "dnsapi"
 
 	# GPU Config
 	POL_Wine_SetVideoDriver
+	
+	# GPU VMS
+	POL_SetupWindow_VMS "$WINE_VMS"
 
 	# Creating Shortcuts
 	POL_Shortcut "$LOL_BIN_FILE" "$PROGRAM_TITLE" "" "" "$LOL_DESKTOP_CATEGORY"
