@@ -47,6 +47,9 @@ STEAM_DESKTOP_CATEGORY="Game;"
 
 	# Creating WinePrefix
 	POL_Wine_PrefixCreate
+	
+	# Setting OS
+	Set_OS "win7"
 
 	# Installing Depends
 	POL_Call POL_Install_vcrun2005
@@ -71,9 +74,6 @@ STEAM_DESKTOP_CATEGORY="Game;"
 
 	# Overrides
 	POL_Wine_OverrideDLL "" "dwrite"
-
-	# GPU Config
-	POL_Wine_SetVideoDriver
 
 	# GPU VMS
 	POL_SetupWindow_VMS "$WINE_VMS"
