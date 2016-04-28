@@ -70,9 +70,6 @@ LOL_DESKTOP_CATEGORY="Game;"
 
 	# Overrides
 	POL_Wine_OverrideDLL "builtin,native" "dnsapi"
-
-	# GPU Config
-	POL_Wine_SetVideoDriver
 	
 	# GPU VMS
 	POL_SetupWindow_VMS "$WINE_VMS"
