@@ -71,7 +71,6 @@ STEAM_DESKTOP_CATEGORY="Game;"
 
 	# Overrides
 	POL_Wine_OverrideDLL "" "dwrite"
-	POL_Wine_OverrideDLL "" "gameoverlayrenderer"
 
 	# GPU Config
 	POL_Wine_SetVideoDriver
@@ -80,10 +79,9 @@ STEAM_DESKTOP_CATEGORY="Game;"
 	POL_SetupWindow_VMS "$WINE_VMS"
 
 	# Creating Shortcuts
-	POL_Shortcut "$STEAM_BIN_FILE" "$PROGRAM_TITLE (Windows)" "" "" "$STEAM_DESKTOP_CATEGORY"
+	POL_Shortcut "$STEAM_BIN_FILE" "$PROGRAM_TITLE" "" "" "$STEAM_DESKTOP_CATEGORY"
 
 	# Exiting Script
-	POL_Wine_reboot
 	POL_System_TmpDelete
 
 	POL_SetupWindow_message "$PROGRAM_TITLE installation completed successfully!" "$PROGRAM_TITLE"
