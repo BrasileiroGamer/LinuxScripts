@@ -49,8 +49,6 @@ LOL_DESKTOP_CATEGORY="Game;"
 	POL_Wine_PrefixCreate
 
 	# Installing Depends
-	POL_Call POL_Install_vcrun2005
-	POL_Call POL_Install_vcrun2008
 	POL_Call POL_Install_d3dx9
 	POL_Call POL_Install_DisableCrashDialog
 	POL_Call POL_Install_FontsSmoothRGB
@@ -68,9 +66,6 @@ LOL_DESKTOP_CATEGORY="Game;"
 	POL_Wine_WaitBefore "$PROGRAM_TITLE"
 	POL_Wine "$POL_System_TmpDir/$LOL_DOWNLOAD_BIN"
 
-	# Overrides
-	POL_Wine_OverrideDLL "builtin,native" "dnsapi"
-	
 	# GPU VMS
 	POL_SetupWindow_VMS "$WINE_VMS"
 
