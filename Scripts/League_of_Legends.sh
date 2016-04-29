@@ -15,7 +15,7 @@ PROGRAM_SITE="http://www.riotgames.com"
 WINE_ARCH="x86"
 WINE_VMS="1024"
 WINE_PREFIX="League_of_Legends"
-WINE_VERSION="System"
+WINE_VERSION="1.9.8-staging" # Arch Linux Current
 
 #==================================================================================================#
 
