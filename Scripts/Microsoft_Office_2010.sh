@@ -13,7 +13,7 @@ PROGRAM_SITE="http://www.microsoft.com"
 #==================================================================================================#
 
 WINE_ARCH="x86"
-WINE_VERSION="System"
+WINE_VERSION="1.9.8-staging" # Arch Linux Current
 WINE_PREFIX="Microsoft_Office_2010"
 
 #==================================================================================================#
