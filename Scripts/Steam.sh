@@ -15,7 +15,7 @@ PROGRAM_SITE="http://www.valvesoftware.com"
 WINE_ARCH="x86"
 WINE_VMS="1024"
 WINE_PREFIX="Steam"
-WINE_VERSION="1.8-steam_crossoverhack"
+WINE_VERSION="System"
 
 #==================================================================================================#
 
@@ -52,9 +52,6 @@ STEAM_DESKTOP_CATEGORY="Game;"
 	Set_OS "win7"
 
 	# Installing Depends
-	POL_Call POL_Install_vcrun2005
-	POL_Call POL_Install_vcrun2008
-	POL_Call POL_Install_vcrun2010
 	POL_Call POL_Install_d3dx9
 	POL_Call POL_Install_DisableCrashDialog
 	POL_Call POL_Install_FontsSmoothRGB
@@ -74,6 +71,7 @@ STEAM_DESKTOP_CATEGORY="Game;"
 
 	# Overrides
 	POL_Wine_OverrideDLL "" "dwrite"
+	POL_Wine_OverrideDLL "" "gameoverlayrenderer"
 
 	# GPU VMS
 	POL_SetupWindow_VMS "$WINE_VMS"
