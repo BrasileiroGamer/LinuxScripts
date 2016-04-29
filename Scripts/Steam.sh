@@ -15,7 +15,7 @@ PROGRAM_SITE="http://www.valvesoftware.com"
 WINE_ARCH="x86"
 WINE_VMS="1024"
 WINE_PREFIX="Steam"
-WINE_VERSION="System"
+WINE_VERSION="1.8-steam_crossoverhack"
 
 #==================================================================================================#
 
@@ -46,7 +46,7 @@ STEAM_DESKTOP_CATEGORY="Game;"
 	POL_Wine_SelectPrefix "$WINE_PREFIX"
 
 	# Creating WinePrefix
-	POL_Wine_PrefixCreate
+	POL_Wine_PrefixCreate "$WINE_VERSION"
 	
 	# Setting OS
 	Set_OS "win7"
