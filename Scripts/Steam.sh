@@ -13,9 +13,9 @@ PROGRAM_SITE="http://www.valvesoftware.com"
 #==================================================================================================#
 
 WINE_ARCH="x86"
+WINE_VERSION="1.9.8-staging" # Arch Linux Current
 WINE_VMS="1024"
 WINE_PREFIX="Steam"
-WINE_VERSION="System"
 
 #==================================================================================================#
 
