@@ -13,7 +13,7 @@ PROGRAM_SITE="http://www.riotgames.com"
 #==================================================================================================#
 
 WINE_ARCH="x86"
-WINE_VERSION="1.9.8-staging" # Arch Linux Current (System)
+WINE_VERSION="1.9.8-staging" #Arch Linux Current (System). If you user other distro, verify if is the latest version of wine-staging on PlayOnLinux. If not, change this version to latest of your have on PlayOnLinux.
 WINE_VMS="1024"
 WINE_PREFIX="League_of_Legends"
 
@@ -46,7 +46,7 @@ LOL_DESKTOP_CATEGORY="Game;"
 	POL_Wine_SelectPrefix "$WINE_PREFIX"
 
 	# Creating WinePrefix
-	POL_Wine_PrefixCreate
+	POL_Wine_PrefixCreate #Change this line to 'POL_Wine_PrefixCreate "$WINE_VERSION"' if you use other distro or not have the wine-staging installed in your system.
 
 	# Installing Depends
 	POL_Call POL_Install_d3dx9
@@ -65,6 +65,9 @@ LOL_DESKTOP_CATEGORY="Game;"
 	# Installing League Of Legends
 	POL_Wine_WaitBefore "$PROGRAM_TITLE"
 	POL_Wine "$POL_System_TmpDir/$LOL_DOWNLOAD_BIN"
+
+	# GPU Driver
+	POL_Wine_SetVideoDriver
 
 	# GPU VMS
 	POL_SetupWindow_VMS "$WINE_VMS"

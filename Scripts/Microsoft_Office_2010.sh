@@ -13,7 +13,7 @@ PROGRAM_SITE="http://www.microsoft.com"
 #==================================================================================================#
 
 WINE_ARCH="x86"
-WINE_VERSION="1.9.8-staging" # Arch Linux Current (System)
+WINE_VERSION="1.9.8-staging" #Arch Linux Current (System). If you user other distro, verify if is the latest version of wine-staging on PlayOnLinux. If not, change this version to latest of your have on PlayOnLinux.
 WINE_PREFIX="Microsoft_Office_2010"
 
 #==================================================================================================#
@@ -48,7 +48,7 @@ MSO_CATEGORY="Office;"
 	POL_Wine_SelectPrefix "$WINE_PREFIX"
 
 	# Creating WinePrefix
-	POL_Wine_PrefixCreate
+	POL_Wine_PrefixCreate #Change this line to 'POL_Wine_PrefixCreate "$WINE_VERSION"' if you use other distro or not have the wine-staging installed in your system.
 
 	# Installing Depends
 	POL_Call POL_Install_msxml6
