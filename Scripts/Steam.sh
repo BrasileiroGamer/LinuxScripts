@@ -13,7 +13,7 @@ PROGRAM_SITE="http://www.valvesoftware.com"
 #==================================================================================================#
 
 WINE_ARCH="x86"
-WINE_VERSION="1.9.8-staging" #Arch Linux Current (System). If you user other distro, verify if is the latest version of wine-staging on PlayOnLinux. If not, change this version to latest of your have on PlayOnLinux.
+WINE_VERSION="https://www.archlinux.org/packages/multilib/x86_64/wine-staging" #Arch Linux Current (System). If you user other distro, verify if is the latest version of wine-staging on PlayOnLinux. If not, change this version to latest of your have on PlayOnLinux.
 WINE_VMS="1024" #Change this to amount of VRAM of your GPU.
 WINE_PREFIX="Steam"
 
