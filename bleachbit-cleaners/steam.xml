@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cleaner id="steam">
+	<label>Steam</label>
+	<description>Gaming platform</description>
+
+	<option id="cookies">
+		<label>Cookies</label>
+		<description>Clean the program cookies</description>
+		<action command="delete" search="walk.files" path="~/Games/Steam/config/cookies/"/>
+	</option>
+
+	<option id="cache">
+		<label>Cache</label>
+		<description>Delete the program cache</description>
+		<action command="delete" search="walk.all" path="~/Games/Steam/appcache/httpcache/"/>
+		<action command="delete" search="walk.files" path="~/Games/Steam/config/htmlcache/"/>
+		<action command="delete" search="walk.files" path="~/Games/Steam/depotcache/"/>
+		<action command="delete" search="walk.files" path="~/Games/Steam/dumps/"/>
+		<action command="delete" search="glob" path="~/Games/Steam/userdata/66995359/config/*.tmp"/>
+	</option>
+
+	<option id="logs">
+		<label>Logs</label>
+		<description>Delete the program logs</description>
+		<action command="delete" search="walk.files" path="~/Games/Steam/logs/"/>
+	</option>
+
+	<option id="stats">
+		<label>Stats</label>
+		<description>Delete user stats</description>
+		<action command="delete" search="walk.files" path="~/Games/Steam/appcache/stats/"/>
+	</option>
+
+	<option id="games">
+		<label>Games</label>
+		<description>Delete game cache</description>
+		<action command="delete" search="walk.files" path="~/Games/Steam/steamapps/common/Left 4 Dead 2/config/html/"/>
+		<action command="delete" search="walk.files" path="~/Games/Steam/steamapps/common/Left 4 Dead 2/left4dead2/downloads/"/>
+	</option>
+</cleaner>

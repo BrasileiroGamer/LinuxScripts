@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cleaner id="winecleaner">
+	<label>WineCleaner</label>
+	<description>Windows Applications Loader</description>
+
+	<option id="cache">
+		<label>Cache</label>
+		<description>Delete the program caches</description>
+		<action command="delete" search="walk.files" path="~/.wine/drive_c/users/lucas/Local Settings/Application Data/Steam/htmlcache/"/>
+		<action command="delete" search="walk.files" path="~/.wine/drive_c/windows/logs/"/>
+		<action command="delete" search="walk.files" path="~/.wine/drive_c/windows/temp/"/>
+		<action command="delete" search="walk.all" path="~/.wine/drive_c/users/lucas/Local Settings/Temporary Internet Files/"/>
+		<action command="delete" search="walk.all" path="~/.wine/drive_c/users/lucas/Temp/"/>
+		<action command="delete" search="walk.files" path="~/.wine/drive_c/users/lucas/Local Settings/Application Data/Steam/htmlcache/"/>
+	</option>
+</cleaner>
