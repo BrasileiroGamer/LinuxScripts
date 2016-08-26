@@ -27,7 +27,7 @@ sudo pacman -Rscn pidgin pluma pragha totem totem-plparser xfburn --noconfirm &&
 
 sudo pacman -Syu --noconfirm && ClearCache
 
-sudo pacman -S gcc-multilib gcc-libs-multilib && ClearCache
+sudo pacman -S gcc-multilib gcc-libs-multilib gdb && ClearCache
 
 yaourt -S aur/ttf-ms-fonts --noconfirm && ClearCache
 
@@ -50,8 +50,6 @@ sudo pacman -S vlc qt4 gparted id3v2 easytag bleachbit --noconfirm && ClearCache
 yaourt -S jdk && ClearCache
 
 sudo pacman -S mono --noconfirm && ClearCache
-
-sudo pacman -S codeblocks --noconfirm && ClearCache
 
 sudo pacman -S netbeans --noconfirm && ClearCache
 
