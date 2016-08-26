@@ -51,7 +51,7 @@ sudo pacman -S mono --noconfirm && ClearCache
 
 sudo pacman -S netbeans --noconfirm && ClearCache
 
-sudo pacman -S monodevelop --noconfirm && ClearCache
+sudo pacman -S monodevelop monodevelop-debugger-gdb --noconfirm && ClearCache
 
 sudo sed -i 's/dns=default/dns=dnsmasq/g' /etc/NetworkManager/NetworkManager.conf
 
