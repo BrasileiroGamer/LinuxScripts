@@ -37,8 +37,6 @@ sudo pacman -S p7zip chromium-pepper-flash simple-scan leafpad dnsmasq --noconfi
 
 yaourt -S aur/sublime-text-dev --noconfirm && ClearCache
 
-sudo pacman -S libpng12 --noconfirm && ClearCache
-
 yaourt -G aur/wps-office && cd wps-office/ && makepkg -Acs --noconfirm && sudo pacman -U wps-office-10.1.0.5672_a21-1-x86_64.pkg.tar --noconfirm && ClearCache
 
 yaourt -S aur/ttf-wps-fonts --noconfirm && ClearCache
